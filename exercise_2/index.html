@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="container">
+                <div class="calc__inner">
+                    <div class="inner__header">
+                        <div class="header__text">Результат:</div>
+                        <div class="header__result" id="result">0</div>
+                    </div>
+                    <div class="inner__content">
+                        <div class="content__numbers">
+                            <div class="content__num"><input id="num1" class="input" type="number"></div>
+                            <div class="content__choice" id="choice"></div>
+                            <div class="content__num"><input id="num2" class="input" type="number"></div>
+                        </div>
+                        <div class="content__operators">
+                            <button class="content__operator" onclick="changeChoice('+')" id="plus">+</button>
+                            <button class="content__operator" onclick="changeChoice('-')" id="minus">-</button>
+                            <button class="content__operator" onclick="changeChoice('*')" id="multiply">*</button>
+                            <button class="content__operator" onclick="changeChoice('/')" id="divide">:</button>
+                        </div>
+                    </div>
+                    <div class="inner__footer">
+                        <div class="footer__submit"><button onclick="calcResult()" class="result">Рассчитать</button></div>
+                    </div>
+                    <div class="calc__history">
+                        <div class="calc__history__inner">
+                            <h2>История:</h2>
+                            <div class="calc__history__result">
+                                <p id="history"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./calculator.js"></script>
+</body>
+</html>

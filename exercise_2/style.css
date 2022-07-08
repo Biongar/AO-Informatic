@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    min-height: 100vh;
+}
+
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.calc__inner{
+    margin: 100px auto 0px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid teal;
+}
+
+.inner__header{
+    display: flex;
+    border: 1px solid teal;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 50px;
+}
+
+.header__text{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.header__result{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.inner__content{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.content__numbers{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0px 10px 0px;
+}
+
+.content__operators{
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 10px 0px;
+}
+
+.inner__footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.result{
+    color: rgb(255, 255, 255);
+    background: teal;
+    border: 1px solid black;
+    font-size: 20px;
+    padding: 5px;
+    margin: 0px 0px 10px 0px;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.result:hover{
+    background: rgb(0, 90, 90);
+    cursor: pointer;
+}
+
+.content__choice{
+    font-size: 25px;
+    padding: 5px;
+}
+
+.input{
+    font-size: 25px;
+    width: 80px;
+    border-color: teal;
+}
+
+.content__operator{
+    color: white;
+    background: teal;
+    margin: 0px 5px;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    min-height: 30px;
+    min-width: 35px;
+}
+
+.content__operator:hover{
+    cursor: pointer;
+}
+
+.calc__history{
+    display: flex;
+    justify-content: center;
+}
